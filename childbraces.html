@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://staging.yourwebsite.com" target="_blank">Visit Staging Site</a>
+    <title>Superior Smiles - Adult Orthodontic</title>
+   
+</head>
+<style>
+         .staging-banner {
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .appointment-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #4CAF50;
+            font-weight: bold;
+        }
+
+        .appointment-btn:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+
+        /* Main Section Styling */
+        .hero {
+            height: 100vh;
+            background-image: url('https://c1.wallpaperflare.com/preview/289/347/808/zahnreinigung-dental-repairs-treat-teeth-brushing-teeth.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .overlay h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 2px solid #fff;
+        }
+
+        .cta-btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Section Styling */
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section .content {
+            width: 50%;
+        }
+
+        .section .image {
+            width: 45%;
+            padding-left: 20px;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: 50px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section .content,
+            .section .image {
+                width: 100%;
+                padding: 0;
+            }
+
+            .section img {
+                margin-top: 20px;
+            }
+        }
+
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+h2, h3 {
+    color: #333;
+}
+   /* General Reset */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+    background-image: url('https://cdn.pixabay.com/video/2023/11/25/190661-888327729_tiny.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input, 
+.form-row textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #0c0f33;
+    color: #FFFFFF;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.logo-social {
+    flex: 1.5;
+}
+
+.logo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #cccccc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom a {
+        margin: 5px 0;
+    }
+}
+
+</style>
+
+</style>
+<body>
+    <div class="staging-banner">
+        You are currently viewing the staging version of this website.
+    </div>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="Superior Smiles Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">New Patients</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Treatments</a></li>
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="appointment-btn">Schedule Appointment</a>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="hero">
+            <div class="overlay">
+                <h1>White spots</h1>
+                <a href="#" class="cta-btn">Book Free Consultation</a>
+            </div>
+        </div>
+    </main>
+    <!-- Section 1: Why Superior Smiles -->
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section why-superior">
+        <div class="content">
+            <h2 style="text-decoration: solid;">Why Do Kids Need Braces?</h2>
+            <a href="#" class="btn">Book Free Consultation</a>
+        </div>
+        <div class="content">
+            <p><strong>Kids can need braces for different reasons, including:</strong></p>
+            <br>
+            <p><strong>crooked, overlapping, or overcrowded teeth
+                "bad bite" (known as malocclusion). Malocclusion is when there's a difference in the sizes of the top and bottom jaws. When the upper jaw is bigger than the lower jaw, it's called an overbite. When the lower jaw is bigger, it's called an underbite.</strong></p>
+          
+        </div>
+    </section>
+    <!-- Section 1: Why Superior Smiles -->
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section why-superior">
+        <div class="image">
+            <img src="img/8 (1).jpeg" alt="Doctor with Patient">
+        </div>
+        <div class="content">
+            <h2 style="text-decoration: solid;">Why Have Braces?</h2>
+            <p><strong> The purpose of orthodontic treatment is to make the best of your teeth. This includes straightening your teeth so you're able to care for your teeth and gums more easily, and improving your bite so you can eat more comfortably. And your smile will benefit, too. Treatment almost always involves using braces to straighten crooked, crowded or protruding teeth, close gaps between teeth, and correct the bite so the top and bottom teeth meet when the mouth is closed. </strong></p>
+            <a href="#" class="btn">Book Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Section 2: How We Work -->
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section how-we-work">
+        <div class="content">
+            <h2>How We Work</h2>
+            <p><strong> Your dentist can tell you when to seek evaluation from an orthodontist. The American Association of Orthodontists and the American Dental Association recommend all kids be evaluated for orthodontics by age 7. By this age, the orthodontist can detect subtle problems with jaw growth and emerging teeth. Most kids begin active treatment between ages 8 and 14.</strong></p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+        <div class="image">
+            <img src="img/9.jpeg" alt="Dental Photography">
+        </div>
+    </section>
+
+    <!-- Section 3: Meet the Team -->
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section meet-team">
+        <div class="image">
+            <img src="img/11.jpg" alt="Dental Team">
+        </div>
+        <div class="content">
+            <h2>When should my child see an orthodontist?</h2>
+            <p><strong> Your dentist can tell you when to seek evaluation from an orthodontist. The American Association of Orthodontists and the American Dental Association recommend all kids be evaluated for orthodontics by age 7. By this age, the orthodontist can detect subtle problems with jaw growth and emerging teeth. Most kids begin active treatment between ages 9 and 14.</strong></p>
+            <a href="#" class="btn">Meet Our Team</a>
+        </div>
+    </section>
+
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section why-superior">
+        <div class="content">
+            <h2 style="text-decoration: solid;">What's the youngest a child can get braces? </h2>
+            <a href="#" class="btn"> Book Free Consultation</a>
+        </div>
+        <div class="content">
+          
+            <p><strong>There is no set age when children require orthodontics. The treatment plan will depend on individual needs. For example, kids with cleft palates get orthodontic appliances before their first teeth erupt Other kids may benefit from starting treatment as early as age 6 or 7, even if they have not lost all of their baby teeth. The goal of early treatment is to prevent further problems from developing.</strong></p>
+          
+        </div>
+    </section>
+
+     <!-- Section 5: Experienced Dentistry -->
+     <section style="box-shadow: 0px 10px 20px; color: grey;" class="section experienced-dentistry">
+        <div class="image">
+            <img src="img/14.jpg" alt="Dentist Working">
+        </div>
+        <div class="content">
+            <h2>Do braces hurt?</h2>
+            <p><strong>"Hurt" may be too strong of a word. But your child may have some discomfort when braces are first put on, when they are adjusted, or when you start using a new appliance, such as rubber bands or a headgear.</strong></p>
+            <a href="#" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+
+    <section style="box-shadow: 0px 10px 20px; color: grey;" class="section why-superior">
+        <div class="content">
+            <h2 style="text-decoration: solid;">What's the Right Age for Braces? </h2>
+            <a href="#" class="btn"> Book Free Consultation</a>
+        </div>
+        <div class="content">
+          
+            <p><strong>There is no fixed age for acquiring braces. Orthodontists decide on a case by case basis when it is best to begin treatment. Usually, children between the ages of nine and 14 can get braces, because the child will have some permanent teeth at this point.
+
+                Although pediatric dentists and orthodontists recommend children to be screened by an orthodontist as early as age seven, braces are not generally fitted until a child is at least 12, has 12-year molars, and has lost all their primary teeth.</strong></p>
+          
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div style="box-shadow: 0px 10px 15px; color: #0056b3;" class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="interest" placeholder="Interested in" required>
+                </div>
+                <div class="form-row">
+                    <textarea name="enquiry" placeholder="Enquiry" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div style="box-shadow: 0px 10px 15px;" class="footer-container">
+            <div class="footer-column logo-social">
+                <div class="logo">
+                    <h2 style="color: white;">Superior Smiles</h2>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>MENU</h4>
+                <ul>
+                    <li><a href="#">New Patients</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Treatments</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>VISIT US</h4>
+                <p>Superior Smiles Knutsford</p>
+                <p>Cheshire Lodge</p>
+                <p>Bexton Lane</p>
+                <p>Knutsford</p>
+                <p>WA16 9AB</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>OPENING HOURS</h4>
+                <p>Monday 8:45 am – 5:00 pm</p>
+                <p>Tuesday 10:15 am – 7:00 pm</p>
+                <p>Wednesday 8:45 am – 5:00 pm</p>
+                <p>Thursday 10:15 am – 7:00 pm</p>
+                <p>Friday 8:45 am – 5:00 pm</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2022 Copyright Superior Smiles</p>
+            <a href="#">Terms of Business</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
